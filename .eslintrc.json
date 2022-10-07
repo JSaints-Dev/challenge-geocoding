@@ -21,6 +21,7 @@
       }
     ],
     "no-undef": "off",
+    "camelcase": "off",
     "react/react-in-jsx-scope": "off",
     "react/jsx-pascal-case": "off",
     "no-unused-vars": "off",
