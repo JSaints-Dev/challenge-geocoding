@@ -34,6 +34,9 @@
       "@services/*":[
         "./src/services/*"
       ],
+      "@ui/*": [
+        "./src/ui/*"
+      ],
     }
   },
   "include": [
