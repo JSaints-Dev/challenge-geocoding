@@ -37,6 +37,9 @@
       "@ui/*": [
         "./src/ui/*"
       ],
+      "@pages/*": [
+        "./src/pages/*"
+      ],
     }
   },
   "include": [

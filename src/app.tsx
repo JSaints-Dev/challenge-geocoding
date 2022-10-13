@@ -1,5 +1,7 @@
-export const App = () => {
+export const App = ({ children }: { children: React.ReactElement }) => {
   return (
-    <div>My App</div>
+    <div>
+      {children}
+    </div>
   )
 }
