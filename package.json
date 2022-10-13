@@ -1,7 +1,6 @@
 {
-  "name": "challenge-calindra",
-  "private": true,
-  "version": "0.0.0",
+  "name": "challenge-geocoding",
+  "version": "0.0.1",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
