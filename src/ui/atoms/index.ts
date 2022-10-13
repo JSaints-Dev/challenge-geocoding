@@ -9,3 +9,6 @@ export * from './divider/divider.types'
 
 export * from './address-box/address-box.comp'
 export * from './address-box/address-box.types'
+
+export * from './text/text.comp'
+export * from './text/text.types'
