@@ -1,12 +1,14 @@
 import { StrictMode } from 'react'
 import ReactDOM from 'react-dom/client'
-import { ChakraProvider } from '@chakra-ui/react'
+import { ThemeProvider } from 'styled-components'
 import { App } from '@/app'
+import { GlobalStyle, theme } from '@resources/styles/theme'
 
 ReactDOM.createRoot(document.querySelector('[data-js="root"]') as HTMLElement).render(
   <StrictMode>
-    <ChakraProvider>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
       <App />
-    </ChakraProvider>
+    </ThemeProvider>
   </StrictMode>,
 )

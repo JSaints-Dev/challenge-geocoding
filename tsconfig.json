@@ -27,7 +27,16 @@
     "paths": {
       "@/*": [
         "./src/*"
-      ]
+      ],
+      "@resources/*": [
+        "./src/resources/*"
+      ],
+      "@services/*":[
+        "./src/services/*"
+      ],
+      "@ui/*": [
+        "./src/ui/*"
+      ],
     }
   },
   "include": [
