@@ -1,8 +1,8 @@
+import { GeolocationTemplate } from '@ui/templates'
+
 const GeolocationPage = () => {
   return (
-    <div>
-      Geolocation
-    </div>
+    <GeolocationTemplate />
   )
 }
 
