@@ -4,6 +4,7 @@ export type BoxProps = {
   bg?: keyof typeof theme.colors
   color?: keyof typeof theme.colors
   dir?: 'row' | 'column'
+  gap?: keyof typeof theme.spacing
   h?: string
   minH?: string
   maxH?: string

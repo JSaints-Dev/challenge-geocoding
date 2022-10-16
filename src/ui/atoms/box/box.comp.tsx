@@ -6,6 +6,7 @@ export const Box = styled.div<BoxProps>`
   color: ${({ color, theme }) => color ? theme.colors[color] : 'inherit'};
   display: flex;
   flex-direction: ${({ dir }) => dir ?? 'column'};
+  gap: ${({ theme, gap }) => gap ? theme.spacing[gap] : 0};
   height: ${({ h }) => h ?? 'auto'};
   min-height: ${({ minH }) => minH ?? 'auto'};
   min-width: ${({ minW }) => minW ?? 'auto'};
