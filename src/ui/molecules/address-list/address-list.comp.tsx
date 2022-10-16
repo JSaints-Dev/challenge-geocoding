@@ -29,7 +29,7 @@ import { AddressListProps } from './address-list.types'
 export const AddressList = (props: AddressListProps) => {
   return (
     <S.AddressListWrapper dir={props.dir}>
-      {props.listItems.map((item) => (
+      {props.listItems?.map((item) => (
         <S.AddressWrapper key={item.id}>
           <AddressBox
             address={item.address}
