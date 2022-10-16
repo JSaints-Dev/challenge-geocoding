@@ -1,6 +1,12 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const theme = {
+  breakpoints: {
+    sm: '576px',
+    md: '768px',
+    lg: '992px',
+    xl: '1200px',
+  },
   colors: {
     black: '#1E293B',
     lightBlack: '#293445',
@@ -18,6 +24,11 @@ export const theme = {
       xl: '2rem',
       xxl: '2.5rem',
     },
+    fontWeight: {
+      light: 300,
+      normal: 400,
+      bold: 700,
+    },
   },
   spacing: {
     xs: '0.375rem',
@@ -25,6 +36,25 @@ export const theme = {
     md: '1rem',
     lg: '1.5rem',
     xl: '2rem',
+  },
+  flex: {
+    alignItems: {
+      baseline: 'baseline',
+      center: 'center',
+      end: 'flex-end',
+      start: 'flex-start',
+      stretch: 'stretch',
+    },
+    justifyContent: {
+      around: 'space-around',
+      between: 'space-between',
+      baseline: 'baseline',
+      center: 'center',
+      end: 'flex-end',
+      firstBaseline: 'first baseline',
+      lastBaseline: 'last baseline',
+      start: 'flex-start',
+    },
   },
 }
 

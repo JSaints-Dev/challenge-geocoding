@@ -8,7 +8,7 @@ export const Text = styled.span.attrs<TextProps>(({ variant }) => ({
   ${({ color = 'black', fontSize = 'xs', fontWeight = 'normal' }) => css`
     color: ${theme.colors[color]};
     font-size: ${theme.fonts.fontSizes[fontSize]};
-    font-weight: ${fontWeight};
+    font-weight: ${theme.fonts.fontWeight[fontWeight]};
     margin: 0;
 `}
 `
