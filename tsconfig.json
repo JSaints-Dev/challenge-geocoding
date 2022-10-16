@@ -25,9 +25,6 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ],
       "@resources/*": [
         "./src/resources/*"
       ],
@@ -36,6 +33,12 @@
       ],
       "@ui/*": [
         "./src/ui/*"
+      ],
+      "@pages/*": [
+        "./src/pages/*"
+      ],
+      "@/*": [
+        "./src/*"
       ],
     }
   },

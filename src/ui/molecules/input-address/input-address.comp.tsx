@@ -6,8 +6,8 @@ export const InputAddress = () => {
     <S.InputAddressWrapper>
       <Input />
       <S.ButtonsWrapper>
-        <Button>Cadastrar</Button>
-        <Button>Calcular distância</Button>
+        <Button bg='primaryDark'>Cadastrar</Button>
+        <Button bg='primaryDark'>Calcular distância</Button>
       </S.ButtonsWrapper>
     </S.InputAddressWrapper>
   )

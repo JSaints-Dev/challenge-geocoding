@@ -9,7 +9,7 @@ export const AddressListWrapper = styled.div<AddressListWrapperProps>`
     flex-wrap: wrap;
     gap: ${theme.spacing.md};
     justify-content: center;
-    padding: ${theme.spacing.md};
+    padding: 0 ${theme.spacing.md};
     width: 100%;
   `}
 `
