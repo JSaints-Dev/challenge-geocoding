@@ -1,11 +1,10 @@
 import styled from 'styled-components'
 
 export const InputAddressWrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.lightBlack};
   display: flex;
   flex-direction: column;
   gap: ${({ theme }) => theme.spacing.sm};
-  padding: ${({ theme }) => theme.spacing.md};
+  padding: 0 ${({ theme }) => theme.spacing.md};
   width: 100%;
 `
 
