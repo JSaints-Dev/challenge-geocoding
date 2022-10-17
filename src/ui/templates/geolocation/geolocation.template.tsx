@@ -7,9 +7,9 @@ export const GeolocationTemplate = () => {
   return (
     <Box w='100%' minH='100vh'>
       <Containers.GeolocationContainer>
-        {({ getFormValueAndSaveAddress }) => (
+        {({ getFormValueAndSaveAddress, addresses }) => (
           <S.FetchAddressContainer>
-            <FetchAddresses getValues={getFormValueAndSaveAddress} />
+            <FetchAddresses addresses={addresses} getValues={getFormValueAndSaveAddress} />
             <DistanceAddresses />
           </S.FetchAddressContainer>
         )}
