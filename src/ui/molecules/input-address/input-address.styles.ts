@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const InputAddressWrapper = styled.div`
+export const InputAddressWrapper = styled.form`
   display: flex;
   flex-direction: column;
   gap: ${({ theme }) => theme.spacing.sm};

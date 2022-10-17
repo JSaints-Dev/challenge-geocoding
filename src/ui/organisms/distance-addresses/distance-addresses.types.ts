@@ -1,9 +1,7 @@
-import { AddressListItems } from '@ui/molecules'
-
 export type DistanceAddressesProps = {
   distanceList?: {
-    all?: AddressListItems[],
-    nearest?: Omit<AddressListItems, 'description'>[],
-    furthest?: Omit<AddressListItems, 'description'>[],
+    all?: AddressType[],
+    nearest?: Omit<AddressType, 'description' | 'latitude' | 'longitude'>[],
+    furthest?: Omit<AddressType, 'description' | 'latitude' | 'longitude'>[],
   }
 }

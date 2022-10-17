@@ -1,13 +1,7 @@
-export type AddressListItems = {
-  address: string;
-  id: number;
-  description?: string;
-}
-
 export type AddressListProps = {
   dir?: 'column' | 'row';
   itemIsClearable?: boolean;
-  listItems?: AddressListItems[];
+  listItems?: AddressType[];
 }
 
 export type AddressListWrapperProps = {
