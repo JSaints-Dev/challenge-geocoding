@@ -1,5 +1,4 @@
-import { AddressListItems } from '@ui/molecules'
-
 export type FetchAddressesProps = {
-  addresses?: AddressListItems[];
+  addresses?: AddressType[];
+  getValues?: (v: string) => void;
 }
