@@ -19,5 +19,5 @@ export const GeolocationContainer = (props: ContainerWithProps<GeoLocationContai
     }
   }
 
-  return props.children({ getFormValueAndSaveAddress })
+  return props.children({ getFormValueAndSaveAddress, addresses })
 }
