@@ -7,6 +7,7 @@ ${({ theme, bg = 'primary', fontSize = 'md', color = 'white' }) => css`
   border: none;
   border-radius: 4px;
   color: ${theme.colors[color]};
+  cursor: pointer;
   font-size: ${theme.fonts.fontSizes[fontSize]};
   font-weight: 700;
   padding: ${theme.spacing.sm};
