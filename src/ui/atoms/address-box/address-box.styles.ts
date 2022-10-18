@@ -7,14 +7,15 @@ export const AddressBoxContainer = styled.div`
   min-height: 4rem;
   justify-content: space-between;
   max-width: 23.75rem;
+  overflow: hidden;
   width: 100%;
 `
 export const AddressBoxId = styled.div`
   align-items: center;
+  background-color: ${({ theme }) => theme.colors.lightBlack};
   border-color: ${({ theme }) => theme.colors.lightBlack};
   border-right: 1px solid;
   display: flex;
-  font-weight: 700;
   justify-content: center;
   min-width: 2.5rem;
   max-width: 3.5rem;
