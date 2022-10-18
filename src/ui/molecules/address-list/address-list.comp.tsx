@@ -37,7 +37,7 @@ export const AddressList = (props: AddressListProps) => {
             isClearable={props.itemIsClearable}
           />
 
-          {!!item.description && (
+          {!!item.description && props.showDescription && (
             <S.DescriptionWrapper>
               <Text color='white' fontSize='sm'>
                 {item.description}

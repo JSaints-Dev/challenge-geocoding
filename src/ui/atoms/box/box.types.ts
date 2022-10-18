@@ -9,6 +9,7 @@ export type BoxProps = {
   gap?: keyof typeof theme.spacing
   h?: string
   justify?: keyof typeof theme.flex.justifyContent
+  margin?: keyof typeof theme.spacing | 'auto'
   minH?: string
   maxH?: string
   minW?: string

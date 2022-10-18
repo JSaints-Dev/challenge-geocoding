@@ -9,7 +9,9 @@ export const AddressListWrapper = styled.div<AddressListWrapperProps>`
     flex-wrap: wrap;
     gap: ${theme.spacing.md};
     justify-content: center;
+    max-width: ${({ theme }) => theme.breakpoints.lg};
     padding: 0 ${theme.spacing.md};
+    margin: auto;
     width: 100%;
   `}
 `
@@ -19,6 +21,8 @@ export const AddressWrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: ${theme.spacing.xs};
+    max-width:23.75rem;
+    width: 100%;
   `}
 `
 

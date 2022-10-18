@@ -10,10 +10,11 @@ export const Box = styled.div<BoxProps>`
   gap: ${({ theme, gap }) => gap ? theme.spacing[gap] : 0};
   height: ${({ h }) => h ?? 'auto'};
   justify-content: ${({ justify = 'start', theme }) => theme.flex.justifyContent[justify]};
-  min-height: ${({ minH }) => minH ?? 'auto'};
-  min-width: ${({ minW }) => minW ?? 'auto'};
+  margin: ${({ margin, theme }) => margin === 'auto' ? margin : margin ? theme.spacing[margin] : 0};
   max-height: ${({ maxH }) => maxH ?? 'auto'};
   max-width: ${({ maxW }) => maxW ?? 'auto'};
+  min-height: ${({ minH }) => minH ?? 'auto'};
+  min-width: ${({ minW }) => minW ?? 'auto'};
   padding: ${({ p }) => p ?? '0'};
   width: ${({ w }) => w ?? 'auto'};
 `
