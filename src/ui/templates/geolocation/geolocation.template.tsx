@@ -7,15 +7,24 @@ export const GeolocationTemplate = () => {
   return (
     <Box w='100%' minH='100vh'>
       <Containers.GeolocationContainer>
-        {({ getFormValueAndSaveAddress, getDistances, addresses, idsNearestAndFurthest, showDistances }) => (
+        {({
+          getFormValueAndSaveAddress,
+          getDistances,
+          addresses,
+          idsNearestAndFurthest,
+          calculatedDistances,
+          clearAddresses,
+        }) => (
           <S.FetchAddressContainer>
             <FetchAddresses
               addresses={addresses}
+              calculatedDistances={calculatedDistances}
+              clearAddresses={clearAddresses}
               getDistances={getDistances}
               getValues={getFormValueAndSaveAddress}
             />
 
-            {showDistances && (
+            {calculatedDistances && (
               <>
                 <Divider bg='white' />
                 <DistanceAddresses distanceList={{

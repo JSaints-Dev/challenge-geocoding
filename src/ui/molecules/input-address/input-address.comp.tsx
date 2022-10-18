@@ -20,10 +20,18 @@ export const InputAddress = (props: InputAddressProps) => {
 
   return (
     <S.InputAddressWrapper onSubmit={handleSubmit}>
-      <Input id='address' name='address' inputRef={inputRef} />
+      <Input disabled={props.calculatedDistances} id='address' name='address' inputRef={inputRef} />
       <S.ButtonsWrapper>
-        <Button type='submit' bg='primaryDark'>Cadastrar</Button>
-        <Button onClick={props.getDistances} bg='primaryDark'>Calcular distância</Button>
+        {props.calculatedDistances
+          ? (
+            <Button bg='black' onClick={props.clearAddresses}>Nova Consulta</Button>
+            )
+          : (
+            <>
+              <Button type='submit' bg='primaryDark'>Cadastrar</Button>
+              <Button onClick={props.getDistances} bg='primaryDark'>Calcular distância</Button>
+            </>
+            )}
       </S.ButtonsWrapper>
     </S.InputAddressWrapper>
   )

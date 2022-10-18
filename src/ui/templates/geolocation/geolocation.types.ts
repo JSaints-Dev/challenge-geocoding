@@ -6,8 +6,9 @@ export type IdsNearestAndFarthestType = {
 export type GeoLocationContainerProps = {
   getFormValueAndSaveAddress: (v: string) => void
   getDistances: () => void
+  clearAddresses: () => void
   addresses: AddressType[]
-  showDistances: boolean
+  calculatedDistances: boolean
   idsNearestAndFurthest: IdsNearestAndFarthestType | null
 }
 

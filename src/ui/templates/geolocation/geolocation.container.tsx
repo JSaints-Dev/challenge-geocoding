@@ -6,7 +6,7 @@ import { haversineDistance } from '@resources/utils'
 export const GeolocationContainer = (props: ContainerWithProps<GeoLocationContainerProps>) => {
   const [addresses, setAddresses] = useState<AddressType[]>([])
   const [idsNearestAndFurthest, setIdsNearestAndFurthest] = useState<IdsNearestAndFarthestType | null>(null)
-  const [showDistances, setShowDistances] = useState(false)
+  const [calculatedDistances, setCalculatedDistances] = useState(false)
 
   const getFormValueAndSaveAddress = async (value: string) => {
     const result = await geocodingService(value)
@@ -37,7 +37,7 @@ export const GeolocationContainer = (props: ContainerWithProps<GeoLocationContai
     })
 
     setAddresses(newAddresses)
-    setShowDistances(true)
+    setCalculatedDistances(true)
   }
 
   const getDistances = () => {
@@ -76,11 +76,18 @@ export const GeolocationContainer = (props: ContainerWithProps<GeoLocationContai
     setDistanceInAddressDescription(distances)
   }
 
+  const clearAddresses = () => {
+    setAddresses([])
+    setIdsNearestAndFurthest(null)
+    setCalculatedDistances(false)
+  }
+
   return props.children({
     addresses,
+    calculatedDistances,
+    clearAddresses,
     getFormValueAndSaveAddress,
     getDistances,
-    showDistances,
     idsNearestAndFurthest,
   })
 }
