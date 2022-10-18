@@ -1,5 +1,6 @@
 export type InputAddressProps = {
   getValues?: (v: string) => void
+  getDistances: () => void
 }
 
 type FormElements ={

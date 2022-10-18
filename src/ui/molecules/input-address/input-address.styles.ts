@@ -4,6 +4,8 @@ export const InputAddressWrapper = styled.form`
   display: flex;
   flex-direction: column;
   gap: ${({ theme }) => theme.spacing.sm};
+  max-width: ${({ theme }) => theme.breakpoints.md};
+  margin: auto;
   padding: 0 ${({ theme }) => theme.spacing.md};
   width: 100%;
 `

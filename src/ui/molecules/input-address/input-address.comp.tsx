@@ -23,7 +23,7 @@ export const InputAddress = (props: InputAddressProps) => {
       <Input id='address' name='address' inputRef={inputRef} />
       <S.ButtonsWrapper>
         <Button type='submit' bg='primaryDark'>Cadastrar</Button>
-        <Button bg='primaryDark'>Calcular distância</Button>
+        <Button onClick={props.getDistances} bg='primaryDark'>Calcular distância</Button>
       </S.ButtonsWrapper>
     </S.InputAddressWrapper>
   )
