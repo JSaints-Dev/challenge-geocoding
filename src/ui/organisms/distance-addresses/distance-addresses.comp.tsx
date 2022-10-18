@@ -11,7 +11,16 @@ export const DistanceAddresses = (props: DistanceAddressesProps) => {
 
   return (
     <Box p='1rem 0' gap='xl' w='100%'>
-      {!!props.distanceList?.all && <AddressList listItems={props.distanceList.all} dir={isDesktop ? 'row' : 'column'} showDescription />}
+      {!!props.distanceList?.all && (
+        <Box alignItems='center' gap='sm' margin='auto'>
+          <Text fontSize='md' fontWeight='bold'>Todas distâncias</Text>
+          <AddressList
+            listItems={props.distanceList.all}
+            dir={isDesktop ? 'row' : 'column'}
+            showDescription
+          />
+        </Box>
+      )}
 
       {(!!props.distanceList?.furthest || !!props.distanceList?.nearest) && <Divider bg='white' />}
       <Box
